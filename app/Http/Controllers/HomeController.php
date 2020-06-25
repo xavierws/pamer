@@ -45,6 +45,7 @@ class HomeController extends Controller
             'kelas_id' => $id,
         ]);
 
-        return redirect()->action('${HomeController@lihatKelas}', ['id' => 'id'])->with('success', 'kelas berhasil diambil');
+        //return redirect()->action('HomeController@lihatKelas', ['id' => 'id'])->with('success', 'kelas berhasil diambil');
+        return redirect()->back()->with('success', 'kelas berhasil diambil');
     }
 }

@@ -34,6 +34,11 @@
                         <p>{{ \Session::get('danger') }}</p>
                     </div><br />
                     @endif
+                    @if (\Session::has('success'))
+                    <div class="alert alert-success">
+                        <p>{{ \Session::get('success') }}</p>
+                    </div><br />
+                    @endif
                     <div class="card-title">penjelasan kelas</div>
                     <p align="justify">
                         @if ($kelas != null)
