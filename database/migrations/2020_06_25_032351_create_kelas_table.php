@@ -18,6 +18,7 @@ class CreateKelasTable extends Migration
             $table->string('nama_kelas');
             $table->string('keterangan');
             $table->unsignedBigInteger('pengajar_id');
+            $table->string('kode_kelas');
             $table->timestamps();
         });
 

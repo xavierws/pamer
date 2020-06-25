@@ -21,6 +21,11 @@
                                 class="form-control" required>
                         </div>
                         <div class="position-relative form-group">
+                            <label for="kode_kelas" class="">Kode kelas</label>
+                            <input name="kode_kelas" id="kode_kelas" placeholder="masukkan kode kelas" type="text"
+                                class="form-control" required>
+                        </div>
+                        <div class="position-relative form-group">
                             <label for="keterangan" class="">Keterangan</label>
                             <textarea name="keterangan" id="keterangan" cols="30" rows="10" class="form-control"
                                 required></textarea>

@@ -20,7 +20,7 @@
                     <form action="{{ url('login') }}" class="" method="POST">
                         @csrf
                         <div class="position-relative form-group">
-                            <label for="email" class="">Username</label>
+                            <label for="username" class="">Username</label>
                             <input name="username" id="username" placeholder="fill your username here" type="text"
                                 class="form-control">
                         </div>

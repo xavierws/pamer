@@ -29,9 +29,9 @@
         <div class="col">
             <div class="card main-card">
                 <div class="card-body">
-                    @if (\Session::has('danger'))
+                    @if (\Session::has('error'))
                     <div class="alert alert-danger">
-                        <p>{{ \Session::get('danger') }}</p>
+                        <p>{{ \Session::get('error') }}</p>
                     </div><br />
                     @endif
                     @if (\Session::has('success'))
@@ -42,11 +42,15 @@
                     <div class="card-title">penjelasan kelas</div>
                     <p align="justify">
                         @if ($kelas != null)
+                        <div>kode kelas: {{ $kelas->kode_kelas }}</div>
                         {{ $kelas->keterangan }}
                         @else
                         Maaf tidak ada keterangan terkait kelas ini.
                         @endif
                     </p>
+                    <div>
+                        <a href="#" class="btn btn-info">Materi</a>
+                    </div>
                 </div>
             </div>
         </div>

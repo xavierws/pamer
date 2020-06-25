@@ -69,6 +69,7 @@
             <div class="card main-card mb-3">
                 <div class="card-body">
                     <div class="card-title">{{ $kls['nama_kelas'] }}</div>
+                    <p>kode kelas: {{ $kls['kode_kelas'] }}</p>
                     <p>{{ $kls['keterangan'] }}</p>
                     <a class="btn btn-primary" type="submit"
                         href="{{ action('HomeController@lihatKelas', $kls['id']) }}">Lihat</a>

@@ -27,6 +27,13 @@ Route::get('tambah-kelas', function (){
 });
 Route::post('tambah-kelas', 'DashboardController@tambahKelas');
 Route::get('cari-kelas', 'HomeController@cariKelas');
+Route::get('token-kelas', function () {
+    return view('ambilKelas');
+});
+Route::post('token-kelas', 'DashboardController@tokenKelas');
+Route::get('materi-kelas', function () {
+    return view('materi');
+});
 
 //register
 Route::get('register', function () {
