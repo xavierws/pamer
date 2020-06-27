@@ -49,7 +49,7 @@
                         @endif
                     </p>
                     <div>
-                        <a href="#" class="btn btn-info">Materi</a>
+                        <a href="{{ url('materi-kelas') }}" class="btn btn-info">Materi</a>
                     </div>
                 </div>
             </div>
